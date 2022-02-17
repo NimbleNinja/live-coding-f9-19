@@ -15,9 +15,10 @@
 //input: number
 //output: undefined
 function getPrimes(num) {
-  for (let index = 2; index <= num; i += 1) {
+  for (let index = 2; index <= num; index += 1) {
     let isPrime = true;
-    for (let secondIndex = 2; secondIndex <= index; secondIndex += 1) {
+
+    for (let secondIndex = 2; secondIndex < index; secondIndex += 1) {
       if (index % secondIndex === 0) {
         isPrime = false;
         break;
