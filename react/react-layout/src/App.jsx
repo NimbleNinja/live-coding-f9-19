@@ -1,16 +1,6 @@
 import React from 'react';
-import Login from './Login';
-import Logout from './Logout';
-import Spinner from './Spinner';
+import Auth from './Auth';
 
-const App = () => {
-  return (
-    <>
-      <Spinner />
-      <Login />
-      <Logout />
-    </>
-  );
-};
+const App = () => <Auth />;
 
 export default App;
